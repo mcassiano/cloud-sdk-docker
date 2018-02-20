@@ -7,6 +7,7 @@ COPY --from=static-docker-source /usr/local/bin/docker /usr/local/bin/docker
 RUN apt-get -qqy update && apt-get install -qqy \
         curl \
         gcc \
+        cpio \
         python-dev \
         python-setuptools \
         apt-transport-https \
